@@ -32,6 +32,12 @@ proportions = [0.9, 0.1]
 col1, col2 = st.columns(proportions)
 height = 1050
 width = 1920
+
+radius = 80
+border_size = 1
+x = 888
+y = 391
+
 with col1:
     iframe_html = f"""
          <div style="width: {width*proportions[0]};height: {height-150}px; overflow: hidden;">
@@ -44,12 +50,20 @@ with col1:
                 top: -100px;
                 bottom: -100px;">
             </iframe> 
-        </div>
+            <div
+                style = "
+                    width: {radius+border_size}px;
+                    position: absolute;
+                    left: {x-radius/2}px;
+                    top: {y}px;
+                    z-index: 998;
+                ">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Volvo-Spread-Word-Mark-Black.svg"/>
+            </div>
     """
     components.html(
         iframe_html,
-        height=height,
-        
+        height=height
     )
 with col2:
     html_source = """
