@@ -31,7 +31,7 @@ st.divider()
 iframe_src = "https://embed.waze.com/iframe?zoom=12&lat=-25.436144&lon=-49.351273&ct=livemap&utm_medium=fullscreen_map"
 proportions = [0.9, 0.1]
 col1, col2 = st.columns(proportions)
-height = 1080
+height = 1000
 width = 1920
 with col1:
     iframe_html = f"""
