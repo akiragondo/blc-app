@@ -28,7 +28,6 @@ with col2:
 with col3:
     st.write("")
 st.divider()
-iframe_src = "https://embed.waze.com/iframe?zoom=12&lat=-25.436144&lon=-49.351273&ct=livemap&utm_medium=fullscreen_map"
 proportions = [0.9, 0.1]
 col1, col2 = st.columns(proportions)
 height = 1050
@@ -37,7 +36,7 @@ with col1:
     iframe_html = f"""
          <div style="width: {width*proportions[0]};height: {height-150}px; overflow: hidden;">
             <iframe 
-                src="https://embed.waze.com/iframe?zoom=12&lat=-25.436144&lon=-49.351273&ct=livemap&utm_medium=fullscreen_map" 
+                src="https://embed.waze.com/iframe?zoom=10&lat=-25.52613&lon=-49.379926&ct=livemap&utm_medium=fullscreen_map" 
                 width="{width*proportions[0]}" 
                 height="{height}"
                 style="position: 
